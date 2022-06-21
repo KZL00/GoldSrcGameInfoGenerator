@@ -9,7 +9,7 @@ namespace GoldSrcGameInfoGenerator.Utils
 {
     class ByteWriter
     {
-        public void AddText(FileStream fs, string value)
+        public static void AddText(FileStream fs, string value)
         {
             byte[] data = new UTF8Encoding(true).GetBytes(value);
             fs.Write(data, 0, data.Length);

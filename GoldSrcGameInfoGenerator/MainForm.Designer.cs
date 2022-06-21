@@ -60,7 +60,6 @@ namespace GoldSrcGameInfoGenerator
             this.aboutButton = new System.Windows.Forms.Button();
             this.generateButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
-            this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.bgPanel.SuspendLayout();
             this.modGroupBox.SuspendLayout();
             this.dllGroupBox.SuspendLayout();
@@ -414,7 +413,6 @@ namespace GoldSrcGameInfoGenerator
         private System.Windows.Forms.Button aboutButton;
         private System.Windows.Forms.Button generateButton;
         private System.Windows.Forms.Button exitButton;
-        private System.Windows.Forms.SaveFileDialog saveFileDialog;
     }
 }
 

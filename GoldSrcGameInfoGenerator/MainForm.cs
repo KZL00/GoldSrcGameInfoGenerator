@@ -53,7 +53,19 @@ namespace GoldSrcGameInfoGenerator
             string TRAINING_MAP = trainingMapTextBox.Text;
 
             // Output Location
+            string OUTPUT_DIRECTORY;
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "GAM File|*.gam";
+            saveFileDialog.Title = "Save an liblist.gam file";
+            saveFileDialog.ShowDialog();
 
+            if (saveFileDialog.FileName != "")
+            {
+                OUTPUT_DIRECTORY = saveFileDialog.FileName;
+
+                Generator generator = new Generator();
+                generator.Generate(MOD_NAME, MOD_TYPE, MOD_ICON, GAME_DLL, GAME_DLL_LINUX, GAME_DLL_OSX, DEVELOPER_NAME, DEVELOPER_WEBPAGE, STARTING_MAP, TRAINING_MAP, OUTPUT_DIRECTORY);
+            }
         }
     }
 }
