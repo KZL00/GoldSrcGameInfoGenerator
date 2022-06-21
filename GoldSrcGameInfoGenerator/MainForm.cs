@@ -21,5 +21,10 @@ namespace GoldSrcGameInfoGenerator
         {
             Console.WriteLine("GoldSrcGameInfoGenerator UI ready.");
         }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }
