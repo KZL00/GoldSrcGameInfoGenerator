@@ -26,5 +26,15 @@ namespace GoldSrcGameInfoGenerator
         {
             Environment.Exit(0);
         }
+
+        private void aboutButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void generateButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

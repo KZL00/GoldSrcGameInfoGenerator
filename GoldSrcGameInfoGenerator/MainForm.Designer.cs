@@ -80,7 +80,7 @@ namespace GoldSrcGameInfoGenerator
             // 
             this.subtitleLabel.AutoSize = true;
             this.subtitleLabel.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.subtitleLabel.Location = new System.Drawing.Point(529, 58);
+            this.subtitleLabel.Location = new System.Drawing.Point(541, 58);
             this.subtitleLabel.Name = "subtitleLabel";
             this.subtitleLabel.Size = new System.Drawing.Size(51, 16);
             this.subtitleLabel.TabIndex = 1;
@@ -92,9 +92,9 @@ namespace GoldSrcGameInfoGenerator
             this.titleLabel.Font = new System.Drawing.Font("Montserrat", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.titleLabel.Location = new System.Drawing.Point(19, 26);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(528, 48);
+            this.titleLabel.Size = new System.Drawing.Size(537, 48);
             this.titleLabel.TabIndex = 0;
-            this.titleLabel.Text = "GoldSrc GameInfo Generator";
+            this.titleLabel.Text = "GoldSrc Game Info Generator";
             // 
             // modGroupBox
             // 
@@ -324,6 +324,7 @@ namespace GoldSrcGameInfoGenerator
             this.aboutButton.TabIndex = 9;
             this.aboutButton.Text = "About";
             this.aboutButton.UseVisualStyleBackColor = true;
+            this.aboutButton.Click += new System.EventHandler(this.aboutButton_Click);
             // 
             // generateButton
             // 
@@ -333,6 +334,7 @@ namespace GoldSrcGameInfoGenerator
             this.generateButton.TabIndex = 10;
             this.generateButton.Text = "Generate";
             this.generateButton.UseVisualStyleBackColor = true;
+            this.generateButton.Click += new System.EventHandler(this.generateButton_Click);
             // 
             // exitButton
             // 

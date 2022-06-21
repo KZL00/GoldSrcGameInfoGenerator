@@ -14,7 +14,6 @@ namespace GoldSrcGameInfoGenerator
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
-            Console.WriteLine("GoldSrcGameInfoGenerator ready.");
         }
     }
 }
