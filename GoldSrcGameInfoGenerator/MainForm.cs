@@ -63,8 +63,15 @@ namespace GoldSrcGameInfoGenerator
             {
                 OUTPUT_DIRECTORY = saveFileDialog.FileName;
 
-                Generator generator = new Generator();
-                generator.Generate(MOD_NAME, MOD_TYPE, MOD_ICON, GAME_DLL, GAME_DLL_LINUX, GAME_DLL_OSX, DEVELOPER_NAME, DEVELOPER_WEBPAGE, STARTING_MAP, TRAINING_MAP, OUTPUT_DIRECTORY);
+                if (MOD_TYPE == "singleplayer_only" || MOD_TYPE == "multiplayer_only")
+                {
+                    Generator generator = new Generator();
+                    generator.Generate(MOD_NAME, MOD_TYPE, MOD_ICON, GAME_DLL, GAME_DLL_LINUX, GAME_DLL_OSX, DEVELOPER_NAME, DEVELOPER_WEBPAGE, STARTING_MAP, TRAINING_MAP, OUTPUT_DIRECTORY); 
+                }
+                else
+                {
+                    MessageBox.Show("Wrong type. Use 'singleplayer_only' or 'multiplayer_only' to continue.", "GoldSrc Game Info Generator", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
     }
