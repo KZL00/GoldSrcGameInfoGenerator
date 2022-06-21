@@ -29,6 +29,7 @@ namespace GoldSrcGameInfoGenerator
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.bgPanel = new System.Windows.Forms.Panel();
             this.subtitleLabel = new System.Windows.Forms.Label();
             this.titleLabel = new System.Windows.Forms.Label();
@@ -53,12 +54,13 @@ namespace GoldSrcGameInfoGenerator
             this.developerNameLabel = new System.Windows.Forms.Label();
             this.trainingMapTextBox = new System.Windows.Forms.TextBox();
             this.trainingMapLabel = new System.Windows.Forms.Label();
-            this.startMapTextBox = new System.Windows.Forms.TextBox();
-            this.startMapLabel = new System.Windows.Forms.Label();
+            this.startingMapTextBox = new System.Windows.Forms.TextBox();
+            this.startingMapLabel = new System.Windows.Forms.Label();
             this.mapsGroupBox = new System.Windows.Forms.GroupBox();
             this.aboutButton = new System.Windows.Forms.Button();
             this.generateButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
+            this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.bgPanel.SuspendLayout();
             this.modGroupBox.SuspendLayout();
             this.dllGroupBox.SuspendLayout();
@@ -109,7 +111,7 @@ namespace GoldSrcGameInfoGenerator
             this.modGroupBox.Size = new System.Drawing.Size(385, 102);
             this.modGroupBox.TabIndex = 1;
             this.modGroupBox.TabStop = false;
-            this.modGroupBox.Text = "Mod";
+            this.modGroupBox.Text = "Project";
             // 
             // modIconTextBox
             // 
@@ -287,28 +289,28 @@ namespace GoldSrcGameInfoGenerator
             this.trainingMapLabel.TabIndex = 2;
             this.trainingMapLabel.Text = "Training map name";
             // 
-            // startMapTextBox
+            // startingMapTextBox
             // 
-            this.startMapTextBox.Location = new System.Drawing.Point(123, 20);
-            this.startMapTextBox.Name = "startMapTextBox";
-            this.startMapTextBox.Size = new System.Drawing.Size(250, 20);
-            this.startMapTextBox.TabIndex = 1;
+            this.startingMapTextBox.Location = new System.Drawing.Point(123, 20);
+            this.startingMapTextBox.Name = "startingMapTextBox";
+            this.startingMapTextBox.Size = new System.Drawing.Size(250, 20);
+            this.startingMapTextBox.TabIndex = 1;
             // 
-            // startMapLabel
+            // startingMapLabel
             // 
-            this.startMapLabel.AutoSize = true;
-            this.startMapLabel.Location = new System.Drawing.Point(8, 20);
-            this.startMapLabel.Name = "startMapLabel";
-            this.startMapLabel.Size = new System.Drawing.Size(81, 13);
-            this.startMapLabel.TabIndex = 0;
-            this.startMapLabel.Text = "Start map name";
+            this.startingMapLabel.AutoSize = true;
+            this.startingMapLabel.Location = new System.Drawing.Point(8, 20);
+            this.startingMapLabel.Name = "startingMapLabel";
+            this.startingMapLabel.Size = new System.Drawing.Size(95, 13);
+            this.startingMapLabel.TabIndex = 0;
+            this.startingMapLabel.Text = "Starting map name";
             // 
             // mapsGroupBox
             // 
             this.mapsGroupBox.Controls.Add(this.trainingMapTextBox);
             this.mapsGroupBox.Controls.Add(this.trainingMapLabel);
-            this.mapsGroupBox.Controls.Add(this.startMapTextBox);
-            this.mapsGroupBox.Controls.Add(this.startMapLabel);
+            this.mapsGroupBox.Controls.Add(this.startingMapTextBox);
+            this.mapsGroupBox.Controls.Add(this.startingMapLabel);
             this.mapsGroupBox.Location = new System.Drawing.Point(404, 161);
             this.mapsGroupBox.Name = "mapsGroupBox";
             this.mapsGroupBox.Size = new System.Drawing.Size(385, 76);
@@ -360,6 +362,7 @@ namespace GoldSrcGameInfoGenerator
             this.Controls.Add(this.modGroupBox);
             this.Controls.Add(this.bgPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.ShowIcon = false;
@@ -405,12 +408,13 @@ namespace GoldSrcGameInfoGenerator
         private System.Windows.Forms.Label developerNameLabel;
         private System.Windows.Forms.TextBox trainingMapTextBox;
         private System.Windows.Forms.Label trainingMapLabel;
-        private System.Windows.Forms.TextBox startMapTextBox;
-        private System.Windows.Forms.Label startMapLabel;
+        private System.Windows.Forms.TextBox startingMapTextBox;
+        private System.Windows.Forms.Label startingMapLabel;
         private System.Windows.Forms.GroupBox mapsGroupBox;
         private System.Windows.Forms.Button aboutButton;
         private System.Windows.Forms.Button generateButton;
         private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog;
     }
 }
 

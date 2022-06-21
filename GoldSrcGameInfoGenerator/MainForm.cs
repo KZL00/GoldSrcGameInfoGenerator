@@ -34,6 +34,25 @@ namespace GoldSrcGameInfoGenerator
 
         private void generateButton_Click(object sender, EventArgs e)
         {
+            // Project
+            string MOD_NAME = modNameTextBox.Text;
+            string MOD_TYPE = modTypeComboBox.Text;
+            string MOD_ICON = modIconTextBox.Text;
+
+            // DLLs
+            string GAME_DLL = winGameLibraryTextBox.Text;
+            string GAME_DLL_LINUX = linuxGameLibraryTextBox.Text;
+            string GAME_DLL_OSX = osxGameLibraryTextBox.Text;
+
+            // Developer
+            string DEVELOPER_NAME = developerNameTextBox.Text;
+            string DEVELOPER_WEBPAGE = developerWebpageTextBox.Text;
+
+            // Maps
+            string STARTING_MAP = startingMapTextBox.Text;
+            string TRAINING_MAP = trainingMapTextBox.Text;
+
+            // Output Location
 
         }
     }
