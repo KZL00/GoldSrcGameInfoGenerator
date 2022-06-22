@@ -319,7 +319,7 @@ namespace GoldSrcGameInfoGenerator
             // 
             // aboutButton
             // 
-            this.aboutButton.Location = new System.Drawing.Point(404, 243);
+            this.aboutButton.Location = new System.Drawing.Point(404, 266);
             this.aboutButton.Name = "aboutButton";
             this.aboutButton.Size = new System.Drawing.Size(191, 23);
             this.aboutButton.TabIndex = 9;
@@ -329,7 +329,7 @@ namespace GoldSrcGameInfoGenerator
             // 
             // generateButton
             // 
-            this.generateButton.Location = new System.Drawing.Point(404, 266);
+            this.generateButton.Location = new System.Drawing.Point(404, 243);
             this.generateButton.Name = "generateButton";
             this.generateButton.Size = new System.Drawing.Size(383, 23);
             this.generateButton.TabIndex = 10;
@@ -339,7 +339,7 @@ namespace GoldSrcGameInfoGenerator
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(596, 243);
+            this.exitButton.Location = new System.Drawing.Point(596, 266);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(191, 23);
             this.exitButton.TabIndex = 11;
