@@ -29,7 +29,8 @@ namespace GoldSrcGameInfoGenerator
 
         private void aboutButton_Click(object sender, EventArgs e)
         {
-
+            AboutForm about = new AboutForm();
+            about.Show();
         }
 
         private void generateButton_Click(object sender, EventArgs e)
