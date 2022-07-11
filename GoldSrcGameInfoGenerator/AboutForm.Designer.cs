@@ -33,7 +33,12 @@ namespace GoldSrcGameInfoGenerator
             this.bgPanel = new System.Windows.Forms.Panel();
             this.titleLabel = new System.Windows.Forms.Label();
             this.closeButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.linksGroupBox = new System.Windows.Forms.GroupBox();
+            this.linkLabelWebsite = new System.Windows.Forms.LinkLabel();
+            this.linkLabelGitHub = new System.Windows.Forms.LinkLabel();
             this.bgPanel.SuspendLayout();
+            this.linksGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // subtitleLabel
@@ -76,11 +81,57 @@ namespace GoldSrcGameInfoGenerator
             this.closeButton.UseVisualStyleBackColor = true;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(12, 101);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(770, 48);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "GoldSrc Game Info Generator by KZL (KZL00) is an Open-Source tool for Half-Life M" +
+    "odders\r\nto speed up the process of making liblist.gam file.";
+            // 
+            // linksGroupBox
+            // 
+            this.linksGroupBox.Controls.Add(this.linkLabelGitHub);
+            this.linksGroupBox.Controls.Add(this.linkLabelWebsite);
+            this.linksGroupBox.Location = new System.Drawing.Point(12, 254);
+            this.linksGroupBox.Name = "linksGroupBox";
+            this.linksGroupBox.Size = new System.Drawing.Size(100, 30);
+            this.linksGroupBox.TabIndex = 4;
+            this.linksGroupBox.TabStop = false;
+            this.linksGroupBox.Text = "Links";
+            // 
+            // linkLabelWebsite
+            // 
+            this.linkLabelWebsite.AutoSize = true;
+            this.linkLabelWebsite.Location = new System.Drawing.Point(6, 16);
+            this.linkLabelWebsite.Name = "linkLabelWebsite";
+            this.linkLabelWebsite.Size = new System.Drawing.Size(46, 13);
+            this.linkLabelWebsite.TabIndex = 0;
+            this.linkLabelWebsite.TabStop = true;
+            this.linkLabelWebsite.Text = "Website";
+            this.linkLabelWebsite.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelWebsite_LinkClicked);
+            // 
+            // linkLabelGitHub
+            // 
+            this.linkLabelGitHub.AutoSize = true;
+            this.linkLabelGitHub.Location = new System.Drawing.Point(58, 16);
+            this.linkLabelGitHub.Name = "linkLabelGitHub";
+            this.linkLabelGitHub.Size = new System.Drawing.Size(40, 13);
+            this.linkLabelGitHub.TabIndex = 1;
+            this.linkLabelGitHub.TabStop = true;
+            this.linkLabelGitHub.Text = "GitHub";
+            this.linkLabelGitHub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelGitHub_LinkClicked);
+            // 
             // AboutForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(799, 296);
+            this.Controls.Add(this.linksGroupBox);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.bgPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -90,7 +141,10 @@ namespace GoldSrcGameInfoGenerator
             this.Text = "About GoldSrc Game Info Generator";
             this.bgPanel.ResumeLayout(false);
             this.bgPanel.PerformLayout();
+            this.linksGroupBox.ResumeLayout(false);
+            this.linksGroupBox.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -100,5 +154,9 @@ namespace GoldSrcGameInfoGenerator
         private System.Windows.Forms.Panel bgPanel;
         private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.Button closeButton;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox linksGroupBox;
+        private System.Windows.Forms.LinkLabel linkLabelGitHub;
+        private System.Windows.Forms.LinkLabel linkLabelWebsite;
     }
 }
