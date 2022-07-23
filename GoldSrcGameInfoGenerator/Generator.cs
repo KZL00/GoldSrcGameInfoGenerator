@@ -16,9 +16,9 @@ namespace GoldSrcGameInfoGenerator
             using (FileStream fs = File.Create(OUTPUT_DIRECTORY))
             {
                 // "Watermark"
-                ByteWriter.AddText(fs, "// Made with GoldSrc Game Info Generator." + Environment.NewLine);
+                ByteWriter.AddText(fs, "// Made with GoldSrc Game Info Generator (by KZL)." + Environment.NewLine);
                 ByteWriter.AddText(fs, "// Source code: https://github.com/KZL00/GoldSrcGameInfoGenerator" + Environment.NewLine);
-                ByteWriter.AddText(fs, "// Download: [WEBSITE]" + Environment.NewLine + Environment.NewLine);
+                ByteWriter.AddText(fs, "// Download: https://kzl00.github.io/goldsrc-gameinfo/" + Environment.NewLine + Environment.NewLine);
 
                 // Project
                 ByteWriter.AddText(fs, $"game \"{MOD_NAME}\"" + Environment.NewLine);

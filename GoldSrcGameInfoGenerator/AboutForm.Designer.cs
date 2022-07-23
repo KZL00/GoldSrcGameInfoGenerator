@@ -35,8 +35,8 @@ namespace GoldSrcGameInfoGenerator
             this.closeButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.linksGroupBox = new System.Windows.Forms.GroupBox();
-            this.linkLabelWebsite = new System.Windows.Forms.LinkLabel();
             this.linkLabelGitHub = new System.Windows.Forms.LinkLabel();
+            this.linkLabelWebsite = new System.Windows.Forms.LinkLabel();
             this.bgPanel.SuspendLayout();
             this.linksGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -44,10 +44,10 @@ namespace GoldSrcGameInfoGenerator
             // subtitleLabel
             // 
             this.subtitleLabel.AutoSize = true;
-            this.subtitleLabel.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.subtitleLabel.Location = new System.Drawing.Point(541, 58);
+            this.subtitleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.subtitleLabel.Location = new System.Drawing.Point(486, 50);
             this.subtitleLabel.Name = "subtitleLabel";
-            this.subtitleLabel.Size = new System.Drawing.Size(51, 16);
+            this.subtitleLabel.Size = new System.Drawing.Size(45, 15);
             this.subtitleLabel.TabIndex = 1;
             this.subtitleLabel.Text = "By KZL";
             // 
@@ -64,10 +64,10 @@ namespace GoldSrcGameInfoGenerator
             // titleLabel
             // 
             this.titleLabel.AutoSize = true;
-            this.titleLabel.Font = new System.Drawing.Font("Montserrat", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.titleLabel.Location = new System.Drawing.Point(19, 26);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(537, 48);
+            this.titleLabel.Size = new System.Drawing.Size(478, 39);
             this.titleLabel.TabIndex = 0;
             this.titleLabel.Text = "GoldSrc Game Info Generator";
             // 
@@ -84,13 +84,13 @@ namespace GoldSrcGameInfoGenerator
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(12, 101);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(770, 48);
+            this.label1.Size = new System.Drawing.Size(734, 50);
             this.label1.TabIndex = 3;
-            this.label1.Text = "GoldSrc Game Info Generator by KZL (KZL00) is an Open-Source tool for Half-Life M" +
-    "odders\r\nto speed up the process of making liblist.gam file.";
+            this.label1.Text = "GoldSrc Game Info Generator by KZL (KZL00) is an Open-Source tool written in C#\r\n" +
+    "for Half-Life Modders to speed up the process of making liblist.gam file.";
             // 
             // linksGroupBox
             // 
@@ -103,17 +103,6 @@ namespace GoldSrcGameInfoGenerator
             this.linksGroupBox.TabStop = false;
             this.linksGroupBox.Text = "Links";
             // 
-            // linkLabelWebsite
-            // 
-            this.linkLabelWebsite.AutoSize = true;
-            this.linkLabelWebsite.Location = new System.Drawing.Point(6, 16);
-            this.linkLabelWebsite.Name = "linkLabelWebsite";
-            this.linkLabelWebsite.Size = new System.Drawing.Size(46, 13);
-            this.linkLabelWebsite.TabIndex = 0;
-            this.linkLabelWebsite.TabStop = true;
-            this.linkLabelWebsite.Text = "Website";
-            this.linkLabelWebsite.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelWebsite_LinkClicked);
-            // 
             // linkLabelGitHub
             // 
             this.linkLabelGitHub.AutoSize = true;
@@ -124,6 +113,17 @@ namespace GoldSrcGameInfoGenerator
             this.linkLabelGitHub.TabStop = true;
             this.linkLabelGitHub.Text = "GitHub";
             this.linkLabelGitHub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelGitHub_LinkClicked);
+            // 
+            // linkLabelWebsite
+            // 
+            this.linkLabelWebsite.AutoSize = true;
+            this.linkLabelWebsite.Location = new System.Drawing.Point(6, 16);
+            this.linkLabelWebsite.Name = "linkLabelWebsite";
+            this.linkLabelWebsite.Size = new System.Drawing.Size(46, 13);
+            this.linkLabelWebsite.TabIndex = 0;
+            this.linkLabelWebsite.TabStop = true;
+            this.linkLabelWebsite.Text = "Website";
+            this.linkLabelWebsite.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelWebsite_LinkClicked);
             // 
             // AboutForm
             // 

@@ -80,20 +80,20 @@ namespace GoldSrcGameInfoGenerator
             // subtitleLabel
             // 
             this.subtitleLabel.AutoSize = true;
-            this.subtitleLabel.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.subtitleLabel.Location = new System.Drawing.Point(541, 58);
+            this.subtitleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.subtitleLabel.Location = new System.Drawing.Point(489, 50);
             this.subtitleLabel.Name = "subtitleLabel";
-            this.subtitleLabel.Size = new System.Drawing.Size(51, 16);
+            this.subtitleLabel.Size = new System.Drawing.Size(45, 15);
             this.subtitleLabel.TabIndex = 1;
             this.subtitleLabel.Text = "By KZL";
             // 
             // titleLabel
             // 
             this.titleLabel.AutoSize = true;
-            this.titleLabel.Font = new System.Drawing.Font("Montserrat", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.titleLabel.Location = new System.Drawing.Point(19, 26);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(537, 48);
+            this.titleLabel.Size = new System.Drawing.Size(478, 39);
             this.titleLabel.TabIndex = 0;
             this.titleLabel.Text = "GoldSrc Game Info Generator";
             // 

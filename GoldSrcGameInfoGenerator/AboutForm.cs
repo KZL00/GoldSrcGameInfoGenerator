@@ -25,7 +25,7 @@ namespace GoldSrcGameInfoGenerator
 
         private void linkLabelWebsite_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            LinkOpener.OpenLink("https://kzl00.github.io");
+            LinkOpener.OpenLink("https://kzl00.github.io/goldsrc-gameinfo/");
         }
         
         private void linkLabelGitHub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
