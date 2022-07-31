@@ -40,7 +40,7 @@ namespace GoldSrcGameInfoGenerator
 
                 // Advanced
                 ByteWriter.AddText(fs, $"secure \"{SECURE}\"" + Environment.NewLine);
-                ByteWriter.AddText(fs, $"nohimodels \{NO_HI_MODELS}\"" + Environment.NewLine);
+                ByteWriter.AddText(fs, $"nohimodels \"{NO_HI_MODELS}\"" + Environment.NewLine);
             }
 
             MessageBox.Show("The file has been successfully generated.", "GoldSrc Game Info Generator", MessageBoxButtons.OK, MessageBoxIcon.Information);
