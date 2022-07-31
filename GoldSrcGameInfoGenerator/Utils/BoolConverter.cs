@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace GoldSrcGameInfoGenerator.Utils
 {
-    static class BoolConverter
+    class BoolConverter
     {
-        public static string ConvertBool(bool _bool)
+        public string ConvertBool(bool _bool)
         {
             switch(_bool) 
             {

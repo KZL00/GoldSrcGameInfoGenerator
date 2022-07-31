@@ -55,12 +55,11 @@ namespace GoldSrcGameInfoGenerator
             string TRAINING_MAP = trainingMapTextBox.Text;
 
             // Advanced
+            BoolConverter converter = new BoolConverter();
             bool SECURE_CHECKBOX = true; //TODO: Frontend
-            //string SECURE = BoolConverter.ConvertBool(SECURE_CHECKBOX);
-            string SECURE = "1";
+            string SECURE = converter.ConvertBool(SECURE_CHECKBOX);
             bool NO_HI_MODELS_CHECKBOX = true;
-            //string NO_HI_MODELS = BoolConverter.ConvertBool(NO_HI_MODELS_CHECKBOX);
-            string NO_HI_MODELS = "1";
+            string NO_HI_MODELS = converter.ConvertBool(NO_HI_MODELS_CHECKBOX);
 
             // Output Location
             string OUTPUT_DIRECTORY;
