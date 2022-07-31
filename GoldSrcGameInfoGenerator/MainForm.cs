@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using GoldSrcGameInfoGenerator.Utils;
 
 namespace GoldSrcGameInfoGenerator
 {
@@ -55,11 +54,9 @@ namespace GoldSrcGameInfoGenerator
             string TRAINING_MAP = trainingMapTextBox.Text;
 
             // Advanced
-            BoolConverter converter = new BoolConverter();
-            bool SECURE_CHECKBOX = true; //TODO: Frontend
-            string SECURE = converter.ConvertBool(SECURE_CHECKBOX);
-            bool NO_HI_MODELS_CHECKBOX = true;
-            string NO_HI_MODELS = converter.ConvertBool(NO_HI_MODELS_CHECKBOX);
+            //TODO: Frontend
+            string SECURE = "1";
+            string NO_HI_MODELS = "1";
 
             // Output Location
             string OUTPUT_DIRECTORY;
