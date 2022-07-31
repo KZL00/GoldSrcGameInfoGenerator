@@ -37,6 +37,10 @@ namespace GoldSrcGameInfoGenerator
                 // Maps
                 ByteWriter.AddText(fs, $"startmap \"{STARTING_MAP}\"" + Environment.NewLine);
                 ByteWriter.AddText(fs, $"trainmap \"{TRAINING_MAP}\"" + Environment.NewLine);
+
+                // Advanced
+                ByteWriter.AddText(fs, $"secure \"{SECURE}\"" + Environment.NewLine);
+                ByteWriter.AddText(fs, $"nohimodels \{NO_HI_MODELS\"" + Environment.NewLine);
             }
 
             MessageBox.Show("The file has been successfully generated.", "GoldSrc Game Info Generator", MessageBoxButtons.OK, MessageBoxIcon.Information);
