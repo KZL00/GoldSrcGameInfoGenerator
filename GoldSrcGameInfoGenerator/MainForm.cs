@@ -56,9 +56,11 @@ namespace GoldSrcGameInfoGenerator
 
             // Advanced
             bool SECURE_CHECKBOX = true; //TODO: Frontend
-            string SECURE = BoolConverter.ConvertBool(SECURE_CHECKBOX);
+            //string SECURE = BoolConverter.ConvertBool(SECURE_CHECKBOX);
+            string SECURE = "1";
             bool NO_HI_MODELS_CHECKBOX = true;
-            string NO_HI_MODELS = BoolConverter.ConvertBool(NO_HI_MODELS_CHECKBOX);
+            //string NO_HI_MODELS = BoolConverter.ConvertBool(NO_HI_MODELS_CHECKBOX);
+            string NO_HI_MODELS = "1";
 
             // Output Location
             string OUTPUT_DIRECTORY;
