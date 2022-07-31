@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GoldSrcGameInfoGenerator.Utils;
 
 namespace GoldSrcGameInfoGenerator
 {
@@ -53,6 +54,12 @@ namespace GoldSrcGameInfoGenerator
             string STARTING_MAP = startingMapTextBox.Text;
             string TRAINING_MAP = trainingMapTextBox.Text;
 
+            // Advanced
+            bool SECURE_CHECKBOX = true; //TODO: Frontend
+            string SECURE = BoolConverter.ConvertBool(SECURE_CHECKBOX);
+            bool NO_HI_MODELS_CHECKBOX = true;
+            string NO_HI_MODELS = BoolConverter.ConvertBool(NO_HI_MODELS_CHECKBOX);
+
             // Output Location
             string OUTPUT_DIRECTORY;
             SaveFileDialog saveFileDialog = new SaveFileDialog();
@@ -67,7 +74,7 @@ namespace GoldSrcGameInfoGenerator
                 if (MOD_TYPE == "singleplayer_only" || MOD_TYPE == "multiplayer_only")
                 {
                     Generator gen = new Generator();
-                    gen.Generate(MOD_NAME, MOD_TYPE, MOD_ICON, GAME_DLL, GAME_DLL_LINUX, GAME_DLL_OSX, DEVELOPER_NAME, DEVELOPER_WEBPAGE, STARTING_MAP, TRAINING_MAP, OUTPUT_DIRECTORY); 
+                    gen.Generate(MOD_NAME, MOD_TYPE, MOD_ICON, GAME_DLL, GAME_DLL_LINUX, GAME_DLL_OSX, DEVELOPER_NAME, DEVELOPER_WEBPAGE, STARTING_MAP, TRAINING_MAP, SECURE, NO_HI_MODELS, OUTPUT_DIRECTORY); 
                 }
                 else
                 {

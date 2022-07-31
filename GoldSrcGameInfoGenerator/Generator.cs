@@ -11,7 +11,7 @@ namespace GoldSrcGameInfoGenerator
 {
     class Generator
     {
-        public void Generate(string MOD_NAME, string MOD_TYPE, string MOD_ICON, string GAME_DLL, string GAME_DLL_LINUX, string GAME_DLL_OSX, string DEVELOPER_NAME, string DEVELOPER_WEBPAGE, string STARTING_MAP, string TRAINING_MAP, string OUTPUT_DIRECTORY)
+        public void Generate(string MOD_NAME, string MOD_TYPE, string MOD_ICON, string GAME_DLL, string GAME_DLL_LINUX, string GAME_DLL_OSX, string DEVELOPER_NAME, string DEVELOPER_WEBPAGE, string STARTING_MAP, string TRAINING_MAP, string SECURE, string NO_HI_MODELS, string OUTPUT_DIRECTORY)
         {
             using (FileStream fs = File.Create(OUTPUT_DIRECTORY))
             {
@@ -40,7 +40,7 @@ namespace GoldSrcGameInfoGenerator
 
                 // Advanced
                 ByteWriter.AddText(fs, $"secure \"{SECURE}\"" + Environment.NewLine);
-                ByteWriter.AddText(fs, $"nohimodels \{NO_HI_MODELS\"" + Environment.NewLine);
+                ByteWriter.AddText(fs, $"nohimodels \{NO_HI_MODELS}\"" + Environment.NewLine);
             }
 
             MessageBox.Show("The file has been successfully generated.", "GoldSrc Game Info Generator", MessageBoxButtons.OK, MessageBoxIcon.Information);
