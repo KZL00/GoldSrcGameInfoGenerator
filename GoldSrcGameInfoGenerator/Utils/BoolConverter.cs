@@ -5,7 +5,7 @@ namespace GoldSrcGameInfoGenerator.Utils
 {
     class BoolConverter
     {
-        public static starting ConvertBool(bool _bool)
+        public static string ConvertBool(bool _bool)
         {
             switch(_bool) 
             {
