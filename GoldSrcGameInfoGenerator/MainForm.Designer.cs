@@ -60,11 +60,15 @@ namespace GoldSrcGameInfoGenerator
             this.aboutButton = new System.Windows.Forms.Button();
             this.generateButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
+            this.advancedGroupBox = new System.Windows.Forms.GroupBox();
+            this.secureCheckBox = new System.Windows.Forms.CheckBox();
+            this.himodelsCheckBox = new System.Windows.Forms.CheckBox();
             this.bgPanel.SuspendLayout();
             this.modGroupBox.SuspendLayout();
             this.dllGroupBox.SuspendLayout();
             this.developerGroupBox.SuspendLayout();
             this.mapsGroupBox.SuspendLayout();
+            this.advancedGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // bgPanel
@@ -319,7 +323,7 @@ namespace GoldSrcGameInfoGenerator
             // 
             // aboutButton
             // 
-            this.aboutButton.Location = new System.Drawing.Point(404, 266);
+            this.aboutButton.Location = new System.Drawing.Point(207, 324);
             this.aboutButton.Name = "aboutButton";
             this.aboutButton.Size = new System.Drawing.Size(191, 23);
             this.aboutButton.TabIndex = 9;
@@ -329,7 +333,7 @@ namespace GoldSrcGameInfoGenerator
             // 
             // generateButton
             // 
-            this.generateButton.Location = new System.Drawing.Point(404, 243);
+            this.generateButton.Location = new System.Drawing.Point(15, 295);
             this.generateButton.Name = "generateButton";
             this.generateButton.Size = new System.Drawing.Size(383, 23);
             this.generateButton.TabIndex = 10;
@@ -339,7 +343,7 @@ namespace GoldSrcGameInfoGenerator
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(596, 266);
+            this.exitButton.Location = new System.Drawing.Point(12, 324);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(191, 23);
             this.exitButton.TabIndex = 11;
@@ -347,11 +351,43 @@ namespace GoldSrcGameInfoGenerator
             this.exitButton.UseVisualStyleBackColor = true;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
+            // advancedGroupBox
+            // 
+            this.advancedGroupBox.Controls.Add(this.secureCheckBox);
+            this.advancedGroupBox.Controls.Add(this.himodelsCheckBox);
+            this.advancedGroupBox.Location = new System.Drawing.Point(404, 242);
+            this.advancedGroupBox.Name = "advancedGroupBox";
+            this.advancedGroupBox.Size = new System.Drawing.Size(385, 67);
+            this.advancedGroupBox.TabIndex = 9;
+            this.advancedGroupBox.TabStop = false;
+            this.advancedGroupBox.Text = "Advanced";
+            // 
+            // secureCheckBox
+            // 
+            this.secureCheckBox.AutoSize = true;
+            this.secureCheckBox.Location = new System.Drawing.Point(7, 44);
+            this.secureCheckBox.Name = "secureCheckBox";
+            this.secureCheckBox.Size = new System.Drawing.Size(242, 17);
+            this.secureCheckBox.TabIndex = 13;
+            this.secureCheckBox.Text = "Allow VAC secure server (\"secure\" command)";
+            this.secureCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // himodelsCheckBox
+            // 
+            this.himodelsCheckBox.AutoSize = true;
+            this.himodelsCheckBox.Location = new System.Drawing.Point(7, 21);
+            this.himodelsCheckBox.Name = "himodelsCheckBox";
+            this.himodelsCheckBox.Size = new System.Drawing.Size(298, 17);
+            this.himodelsCheckBox.TabIndex = 12;
+            this.himodelsCheckBox.Text = "Show option to enable HD models in video settings menu.";
+            this.himodelsCheckBox.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(799, 296);
+            this.ClientSize = new System.Drawing.Size(799, 355);
+            this.Controls.Add(this.advancedGroupBox);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.generateButton);
             this.Controls.Add(this.aboutButton);
@@ -377,6 +413,8 @@ namespace GoldSrcGameInfoGenerator
             this.developerGroupBox.PerformLayout();
             this.mapsGroupBox.ResumeLayout(false);
             this.mapsGroupBox.PerformLayout();
+            this.advancedGroupBox.ResumeLayout(false);
+            this.advancedGroupBox.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -413,6 +451,9 @@ namespace GoldSrcGameInfoGenerator
         private System.Windows.Forms.Button aboutButton;
         private System.Windows.Forms.Button generateButton;
         private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.GroupBox advancedGroupBox;
+        private System.Windows.Forms.CheckBox secureCheckBox;
+        private System.Windows.Forms.CheckBox himodelsCheckBox;
     }
 }
 
